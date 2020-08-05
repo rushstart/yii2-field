@@ -12,7 +12,7 @@ namespace rushstart\field\types;
  * @property string $value
  *
  */
-class FieldTypeString extends BaseFieldType
+class FieldTypeString extends AbstractFieldType
 {
     /**
      * {@inheritdoc}

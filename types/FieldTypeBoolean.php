@@ -4,14 +4,14 @@ namespace rushstart\field\types;
 
 
 use rushstart\field\FieldInstance;
-use unclead\multipleinput\MultipleInputColumn;
+use rushstart\field\MultipleInputColumn;
 use yii\base\Model;
 use yii\widgets\ActiveForm;
 
 /**
  * This is the model class for table "field_type_boolean".
  */
-class FieldTypeBoolean extends BaseFieldType
+class FieldTypeBoolean extends AbstractFieldType
 {
     /**
      * {@inheritdoc}

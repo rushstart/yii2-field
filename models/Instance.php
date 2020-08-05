@@ -2,8 +2,8 @@
 
 namespace rushstart\field\models;
 
-use rushstart\db\ActiveRecord;
-use rushstart\field\types\BaseFieldType;
+use yii\db\ActiveRecord;
+use rushstart\field\types\AbstractFieldType;
 use yii\db\ActiveQuery;
 use yii\helpers\ArrayHelper;
 
@@ -23,7 +23,7 @@ use yii\helpers\ArrayHelper;
  * @property int $weight
  * @property int $status
  *
- * @property BaseFieldType[] $fields
+ * @property AbstractFieldType[] $fields
  *
  */
 class Instance extends ActiveRecord

@@ -17,7 +17,7 @@ use yii\widgets\ActiveForm;
  *
  * @property FieldInstance $fieldInstance
  */
-class FieldTypeProduct extends BaseFieldType
+class FieldTypeProduct extends AbstractFieldType
 {
     /**
      * {@inheritdoc}

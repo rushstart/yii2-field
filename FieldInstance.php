@@ -3,7 +3,7 @@
 namespace rushstart\field;
 
 use rushstart\field\models\Instance;
-use rushstart\field\types\BaseFieldType;
+use rushstart\field\types\AbstractFieldType;
 use Throwable;
 use Yii;
 use yii\db\ActiveQuery;
@@ -29,7 +29,7 @@ use yii\widgets\ActiveForm;
  *
  * @property mixed $values
  * @property string $name
- * @property BaseFieldType[] $fields
+ * @property AbstractFieldType[] $fields
  *
  */
 class FieldInstance extends Instance
@@ -59,7 +59,7 @@ class FieldInstance extends Instance
      */
     public function getFieldFormFields(ActiveForm $form): string
     {
-        /** @var BaseFieldType $fieldTypeClass */
+        /** @var AbstractFieldType $fieldTypeClass */
         $fieldTypeClass = $this->getFieldTypeClass();
         if ($this->max === 1) {
             return join('', $fieldTypeClass::getFieldFormFields($this, $this->model, $form));
@@ -102,7 +102,7 @@ class FieldInstance extends Instance
      */
     public function fieldsDelete()
     {
-        /** @var BaseFieldType $fieldTypeClass */
+        /** @var AbstractFieldType $fieldTypeClass */
         $fieldTypeClass = $this->getFieldTypeClass();
         $fieldTypeClass::deleteAll(['field_instance_id' => $this->id, 'entity_id' => $this->model->primaryKey]);
     }
@@ -113,7 +113,7 @@ class FieldInstance extends Instance
     public function setValues($values)
     {
 
-        /** @var BaseFieldType $fieldTypeClass */
+        /** @var AbstractFieldType $fieldTypeClass */
         $fieldTypeClass = $this->getFieldTypeClass();
         $fields = [];
 

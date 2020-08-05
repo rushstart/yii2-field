@@ -14,7 +14,7 @@ use rushstart\taxonomy\models\TaxonomyTerm;
  * @property string $value
  *
  */
-class FieldTypeTaxonomyTerm extends BaseFieldType
+class FieldTypeTaxonomyTerm extends AbstractFieldType
 {
     /**
      * {@inheritdoc}

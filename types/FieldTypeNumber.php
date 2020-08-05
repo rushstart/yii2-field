@@ -15,7 +15,7 @@ use rushstart\field\FieldInstance;
  *
  * @property FieldInstance $fieldInstance
  */
-class FieldTypeNumber extends BaseFieldType
+class FieldTypeNumber extends AbstractFieldType
 {
     /**
      * {@inheritdoc}

@@ -4,7 +4,7 @@ namespace rushstart\field\models;
 
 
 
-use rushstart\db\ActiveQuery;
+use yii\db\ActiveQuery;
 
 /**
  * This is the ActiveQuery class for [[Instance]].
