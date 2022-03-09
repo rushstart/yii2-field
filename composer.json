@@ -12,7 +12,7 @@
   ],
   "minimum-stability": "stable",
   "require": {
-    "php": ">=5.4",
+    "php": ">=7.4",
     "yiisoft/yii2": "~2.0.17",
     "unclead/yii2-multiple-input": "^2.22"
   },
