@@ -19,7 +19,7 @@ use yii\widgets\ActiveForm;
  *
  * @property FieldInstance $fieldInstance
  */
-class AbstractFieldType extends ActiveRecord
+abstract class AbstractFieldType extends ActiveRecord
 {
 
     public $blackHole;
